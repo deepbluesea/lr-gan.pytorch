@@ -10,4 +10,4 @@ class STNM(Module):
         mask = F.grid_sample(fgmask, fggrid)
         fg = F.grid_sample(fgimg, fggrid)
         out = mask * fg + (1 - mask) * canvas
-return out
+        return out
